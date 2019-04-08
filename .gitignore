@@ -1,0 +1,8 @@
+node_modules/
+*.log
+user_appointments_db.json
+**/.ipynb_checkpoints
+**/data/models/
+**/app/models/export.pkl
+**/data/bike/
+**/data/car/
