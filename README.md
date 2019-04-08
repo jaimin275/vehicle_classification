@@ -15,7 +15,7 @@ Car and Bike classification project using Convolutional Neural Network
 
 
 #### My project Structure
-![alt text](add project structure jpg image link)
+![alt text](https://github.com/jaimin275/vehicle_classification/blob/master/Document/images/project_structure.jpg)
 
 
 ## Start
