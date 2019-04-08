@@ -28,7 +28,21 @@ first you need to set your storage. In my case i used google drive which is set 
 
 after setting storage run all cell one by one and understand what's going on.
 
-while downloading dataset from browser after pasting javascript code in browser console, if download popup is not start check you have any popup blocker running in your browser. If you are running popup blocker then disable and run javascript code again.(In my case i disabled adblock plus extension for download dataset)
+while downloading dataset from browser after pasting javascript code in browser console, if download popup is not start check you have any popup blocker running in your browser. If you are running popup blocker then disable and run javascript code again.(In my case i disabled adblock plus extension)
+
+then continue until you create imageDataBunch as lesson 2 lecture show.
+train your model and save stage-1 and stage-2.
+
+Now you have to clean some images while cleaning if ImageCleaner() running infinitely then follow below steps to clean images.
+1. copy your project into local computer
+2. install required fastai library by following [this](https://docs.fast.ai/install.html) article. (In my case i am using two conda command for install fastai)
+3. run notebook in local jupyter and run cells until you create learn object.(do not train model because you already have two train model stage-1 and stage-2 from colab).
+4. skip until cleaning up section and run cleaning up section cells to clean image dataset.
+5. upload that dataset to drive.
+6. run all the cells in colab.
+7. if you get an error while creating ImageDataBunch.from_csv ([Errno 2] No such file or directory: '/content/gdrive/My Drive/ML-Project/vehicle-classification/data/bike\\00000000.jpg') then try creating ImageDataBunch.from_folder().
+8. now train your model and save stage-1 and stage-2
+9. Now time to put your model in production
 
 
 
