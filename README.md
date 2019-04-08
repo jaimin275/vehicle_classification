@@ -44,6 +44,32 @@ Now you have to clean some images while cleaning if ImageCleaner() running infin
 8. now train your model and save stage-1 and stage-2
 9. Now time to put your model in production
 
+## Production
+Please refer production section of [this](https://course.fast.ai/) article if you want to run your model in cloud.
+and also [this](https://medium.com/@pierre_guillou/deep-learning-web-app-by-fastai-v1-3ab4c20b7cac) article for more info.
+
+I am running this model locally.
+
+1. Go to [https://github.com/render-examples/fastai-v3](https://github.com/render-examples/fastai-v3) and download the file fastai-v3-master.zip from this directory by clicking on the green button “Clone or Download” (or make a git clone on your terminal) .
+2. Extract the zip on your test space. For example, into file:///C:/vehicle_classification/production/
+3. In your terminal, install via pip the necessary libraries to have a local Starlette server:
+* pip install Starlette
+* pip install aiofiles
+* pip install uvicorn
+* pip install aiohttp
+* pip install python-multipart
+
+4. run your server.py file "python app/server.py serve"
+* If you don't get any error you will see your localhost running in terminal after some time. 
+* If you getting any error while running this code then follow below steps
+1. copy export.pkl file from drive and paste it in app/models/
+2. replace server.py file with this repository server.py file
+3. run server.py file by "python app/server.py serve" in terminal. you can see your localhost is running.
+4. open localhost and browse any test_image then click analyse and see result.
+5. Done.
+
+
+Note: This repository code is currently running. If you have any problem with your code, compare your code with this repo code and find the difference.
 
 
 
